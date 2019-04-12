@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperMarketCheckout.Business.Models
 {
-    class OrderItem
+    public class OrderItem
     {
         public Product Product { get; set; }
 

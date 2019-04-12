@@ -4,8 +4,8 @@ using System.Text;
 
 namespace SuperMarketCheckout.Business.Models
 {
-    interface IPricingRule
+    public interface IPricingRule
     {
-        decimal ApplyPrice();
+        decimal ApplyPrice(OrderItem orderItem);
     }
 }
