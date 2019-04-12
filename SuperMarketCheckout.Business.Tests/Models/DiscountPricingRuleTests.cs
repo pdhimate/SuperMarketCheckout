@@ -12,7 +12,9 @@ namespace SuperMarketCheckout.Business.Tests.Models
         [TestMethod]
         public void ApplyPrice_Throws()
         {
-            var discountPricing = new DiscountPricingRule();
+            var units = 2;
+            var discountPrice = 15;
+            var discountPricing = new DiscountPricingRule(units, discountPrice);
             Assert.ThrowsException<NotImplementedException>(() => discountPricing.ApplyPrice(null));
         }
     }
