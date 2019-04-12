@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SuperMarketCheckout.Business
 {
-    public class BillingRegister
+    public class BillingRegister : IBillingRegister
     {
         public decimal Checkout(ICollection<OrderItem> orderItems)
         {
