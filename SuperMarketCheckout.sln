@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketCheckout", "SuperMarketCheckout\SuperMarketCheckout.csproj", "{198E8985-6E19-4F9A-AAE1-550003FD765B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketCheckout.Business", "SuperMarketCheckout.Business\SuperMarketCheckout.Business.csproj", "{F08FC6A0-42ED-4E0D-A83D-9043C9A70EAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{198E8985-6E19-4F9A-AAE1-550003FD765B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{198E8985-6E19-4F9A-AAE1-550003FD765B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{198E8985-6E19-4F9A-AAE1-550003FD765B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08FC6A0-42ED-4E0D-A83D-9043C9A70EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08FC6A0-42ED-4E0D-A83D-9043C9A70EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08FC6A0-42ED-4E0D-A83D-9043C9A70EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08FC6A0-42ED-4E0D-A83D-9043C9A70EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
