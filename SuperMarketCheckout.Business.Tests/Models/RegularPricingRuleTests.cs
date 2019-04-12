@@ -12,10 +12,26 @@ namespace SuperMarketCheckout.Business.Tests.Models
         #region ApplyPrice
 
         [TestMethod]
-        public void ApplyPrice_Throws()
+        public void ApplyPrice_ForNullOrderItem_Throws()
         {
             var regularPricing = new RegularPricingRule();
-            Assert.ThrowsException<NotImplementedException>(() => regularPricing.ApplyPrice(null));
+            Assert.ThrowsException<ArgumentNullException>(() => regularPricing.ApplyPrice(null));
+        }
+
+        [TestMethod]
+        public void ApplyPrice_Calculates_Price()
+        {
+            var regularPricing = new RegularPricingRule();
+            var orderItem = new OrderItem
+            {
+                Product = new Product
+                {
+                    UnitPrice = 10
+                },
+                Units = 2
+            };
+            var price = regularPricing.ApplyPrice(orderItem);
+            Assert.AreEqual(20, price);
         }
 
         #endregion

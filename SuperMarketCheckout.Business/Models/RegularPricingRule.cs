@@ -8,7 +8,12 @@ namespace SuperMarketCheckout.Business.Models
     {
         public decimal ApplyPrice(OrderItem orderItem)
         {
-            throw new NotImplementedException();
+            if (orderItem == null)
+            {
+                throw new ArgumentNullException(nameof(orderItem));
+            }
+
+            return orderItem.Units * orderItem.Product.UnitPrice;
         }
     }
 }
